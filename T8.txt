@@ -1,0 +1,18 @@
+* Access tokens are issued to third-party clients by an authorization server
+ with the approval of the resource owner. 
+The client uses the access token to access the protected resources hosted by the resource server.
+
+* Refresh Tokens are credentials used to obtain access tokens. 
+Refresh tokens are issued to the client by the authorization server 
+and are used to obtain a new access token when the current access token becomes invalid or expires, 
+or to obtain additional access tokens with identical or narrower scope.
+
+so,
+Refresh Token are typically longer lived than Access Tokens and used to request a new Access Token
+without forcing user authentication. 
+Unlike Access Tokens, Refresh Tokens are only used with the Authorization Server and are never sent to a web service.
+with refresh token we can to:
+-send API request with access token
+-If access token is invalid, try to update it using refresh token
+-if refresh request passes, update the access token and re-send the initial API request
+-If refresh request fails, ask user to re-authenticate

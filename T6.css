@@ -1,0 +1,14 @@
+
+.container:nth-child(1){
+    background-color: rgb(210, 62, 148),
+}
+
+li.mango{
+    background-color: brown;
+}
+
+[type="green"]{
+    background-color: rgb(96, 202, 119);
+}
+
+

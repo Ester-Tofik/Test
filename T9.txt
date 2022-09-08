@@ -1,0 +1,15 @@
+
+1.
+q=mimeType contains '.pdf' in parents id='1234'
+
+2.
+q=name contains 'important' 
+
+3.
+q=sharedWithMe and mimeType = 'audio/mp3'
+
+the final q  is:
+q=mimeType contains '.pdf' in parents has id='1234' or name contains 'important' or  sharedWithMe and mimeType = 'audio/mp3'
+
+
+
